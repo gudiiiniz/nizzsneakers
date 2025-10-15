@@ -5,8 +5,12 @@
 .info-box {
   max-width: 800px;
   margin: 0 auto;
-  background: #a2c44b;
-  border-radius: 15px;
   padding:20px;
   text-align: justify;
+}
+
+.desc {
+  max-width: 800px;
+  margin: 0 auto;
+  padding:20px;
 }
