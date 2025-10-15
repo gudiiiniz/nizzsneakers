@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Nizz Sneakers</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css" /> 
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a2c44b">
-        <div class="container-fluid px-5 justify-content-center">
-            <img src="content/logo.png" alt="'Logo Nizz Sneakers" width="80" height="80">
-            <a class="navbar-brand fw-bold px-5" href="home.html">Nizz Sneakers</a>
-          <div class="collapse navbar-collapse flex-grow-0">
-            <ul class="navbar-nav ms-2">
-              <a class="nav-link px-4 fw-semibold" href="./pages/catalog.html">Catálogo</a>
-              <a class="nav-link px-4 fw-semibold" href="./pages/request.html">Solicitar</a>
-              <a class="nav-link px-4 fw-semibold" href="./pages/about.html">Sobre</a>  
-            </ul>
-          </div>
+  <body>
+    <header class="navbar navbar-expand-lg" style="background: #a2c44b">
+      <nav class="container container-fluid justify-content-center">
+        <img src="content/logo.png" height="60" />
+
+        <a class="navbar-brand px-4" href="home.html">Nizz Sneakers</a>
+        <div class="navbar-collapse flex-grow-0">
+          <ul class="navbar-nav">
+            <a class="nav-link px-4" href="./pages/catalog.html">Catálogo</a>
+            <a class="nav-link px-4" href="./pages/request.html">Solicitar</a>
+            <a class="nav-link px-4" href="./pages/about.html">Sobre</a>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <div class="container mt-5 text-center">
+    <section class="mt-3 text-center">
       <h1>Nizz Sneakers</h1>
       <p class="desc">O Hype lá de fora, no seu pé.</p>
-    </div>
+    </section>
 
     <div class="container mt-5">
-        <div class="row d-flex align-items-center gx-3">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <span class="info-box textbg">
+            A Nizz Sneakers nasceu da nossa própria paixão e frustração: a
+            dificuldade de acessar o mercado global de sneakers aqui do Brasil.
+            Somos mais que uma empresa de redirecionamento; somos uma curadoria
+            que conecta você à cena global.
+          </span><br/><br/>
 
-            <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
-                <p class="info-box">
-                    A Nizz Sneakers nasceu da nossa própria paixão e frustração: a dificuldade de acessar o mercado global de sneakers aqui do Brasil. Somos mais que uma empresa de redirecionamento; somos uma curadoria que conecta você à cena global.
-                </p>
-                
-                <div class="mt-4 text-start">
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-center">
-                            <i class="bi bi-box-seam fs-4 me-3" style="color: #a2c44b;"></i>
-                            <span><strong>Entrega em Todo o Brasil:</strong> Receba seu sneaker exclusivo em qualquer lugar do país com segurança e rastreamento completo.</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-4 me-3" style="color: #a2c44b;"></i>
-                            <span><strong>Veja Antes de Enviar:</strong> Após a chegada do seu par em nosso estoque, enviamos fotos e vídeos reais para sua aprovação final. Transparência total.</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <i class="bi bi-patch-check-fill fs-4 me-3" style="color: #a2c44b;"></i>
-                            <span><strong>Autenticidade Garantida:</strong> Trabalhamos apenas com fornecedores verificados. Cada par passa por um rigoroso processo de autenticação.</span>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-search-heart fs-4 me-3" style="color: #a2c44b;"></i>
-                            <span><strong>Pedido Sob Demanda:</strong> Não encontrou o que procurava? Nosso time vai atrás do modelo específico que você deseja.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <ul>
+            <li>
+              <span
+                ><strong>Entrega em Todo o Brasil:</strong> Receba seu sneaker
+                exclusivo em qualquer lugar do país com segurança e rastreamento
+                completo.</span>
+            </li>
 
-            <div class="col-12 col-md-6">
-                <div style="max-width: 280px;" class="mx-auto">
-                    <div class="ratio" style="--bs-aspect-ratio: 177.77%;">
-                        <video src="content/home/snk.mp4" autoplay loop muted controls class="rounded"></video>
-                    </div>
-                </div>
-            </div>
+            <li>
+              <span
+                ><strong>Veja Antes de Enviar:</strong> Após a chegada do seu
+                par em nosso estoque, enviamos fotos e vídeos reais para sua
+                aprovação final. Transparência total.</span>
+            </li>
 
+            <li>
+              <span
+                ><strong>Autenticidade Garantida:</strong> Trabalhamos apenas
+                com fornecedores verificados. Cada par passa por um rigoroso
+                processo de autenticação.
+              </span>
+            </li>
+
+            <li>
+              <span
+                ><strong>Pedido Sob Demanda:</strong> Não encontrou o que
+                procurava? Nosso time vai atrás do modelo específico que você
+                deseja.
+              </span>
+            </li>
+          </ul>
         </div>
+
+        <div class="col-5">
+          <video
+            src="content/home/snk.mp4"
+            autoplay
+            loop
+            controls
+            class="rounded"
+            style="max-width: 250px; margin: 0 auto; display: block">
+          </video>
+        </div>
+      </div>
     </div>
 
-    <footer class="mt-5 text-white" style="background: #a2c44b">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-start">
-                    <h5>Nizz Sneakers</h5>
-                    <p class="mb-0">&copy; 2025. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <h5>Nos siga nas redes</h5>
-                    <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

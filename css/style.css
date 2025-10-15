@@ -5,12 +5,25 @@
 .info-box {
   max-width: 800px;
   margin: 0 auto;
-  padding:20px;
+
   text-align: justify;
 }
 
 .desc {
   max-width: 800px;
-  margin: 0 auto;
-  padding:20px;
+  margin: auto;
+}
+
+li {
+  font-size: larger;
+  text-align: justify;
+}
+
+.textbg {
+  font-size: larger;
+}
+
+
+.card img {
+  border-radius: 0.375rem;
 }
