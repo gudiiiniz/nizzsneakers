@@ -1,11 +1,13 @@
-* {
-    font-family: 'JetBrains Mono', monospace !important;
+:root {
+  --nizz-green: #a2c44b;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .info-box {
   max-width: 800px;
-  margin: 0 auto;
-
   text-align: justify;
 }
 
@@ -13,17 +15,53 @@
   max-width: 800px;
   margin: auto;
 }
-
-li {
-  font-size: larger;
-  text-align: justify;
-}
-
+ 
 .textbg {
   font-size: larger;
 }
 
-
 .card img {
   border-radius: 0.375rem;
+}
+
+.btn-primary {
+  background-color: var(--nizz-green);
+  border-color: var(--nizz-green);
+  color: #000;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: #8dab40;
+  border-color: #8dab40;
+  color: #000;
+}
+
+.text-brand {
+  color: var(--nizz-green);
+}
+
+.video-home {
+  max-width: 350px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.card-hover {
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.footer-socials a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--nizz-green);
 }

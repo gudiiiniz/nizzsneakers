@@ -2,93 +2,235 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nizz Sneakers</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header class="navbar navbar-expand-lg" style="background: #a2c44b">
-      <nav class="container container-fluid justify-content-center">
-        <img src="content/logo.png" height="60" />
+    <header
+      class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow-sm"
+    >
+      <div class="container align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="../home.html">
+          <img
+            src="content/logo.png"
+            height="50"
+            alt="Logo"
+            class="me-3"
+          />
+          <span class="fw-bold">Nizz Sneakers</span>
+        </a>
 
-        <a class="navbar-brand px-4" href="home.html">Nizz Sneakers</a>
-        <div class="navbar-collapse flex-grow-0">
-          <ul class="navbar-nav">
-            <a class="nav-link px-4" href="./pages/catalog.html">Catálogo</a>
-            <a class="nav-link px-4" href="./pages/request.html">Solicitar</a>
-            <a class="nav-link px-4" href="./pages/about.html">Sobre</a>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section class="mt-3 text-center">
-      <h1>Nizz Sneakers</h1>
-      <p class="desc">O Hype lá de fora, no seu pé.</p>
-    </section>
-
-    <div class="container mt-5">
-      <div class="row align-items-center">
-        <div class="col-7">
-          <span class="info-box textbg">
-            A Nizz Sneakers nasceu da nossa própria paixão e frustração: a
-            dificuldade de acessar o mercado global de sneakers aqui do Brasil.
-            Somos mais que uma empresa de redirecionamento; somos uma curadoria
-            que conecta você à cena global.
-          </span><br/><br/>
-
-          <ul>
-            <li>
-              <span
-                ><strong>Entrega em Todo o Brasil:</strong> Receba seu sneaker
-                exclusivo em qualquer lugar do país com segurança e rastreamento
-                completo.</span>
-            </li>
-
-            <li>
-              <span
-                ><strong>Veja Antes de Enviar:</strong> Após a chegada do seu
-                par em nosso estoque, enviamos fotos e vídeos reais para sua
-                aprovação final. Transparência total.</span>
-            </li>
-
-            <li>
-              <span
-                ><strong>Autenticidade Garantida:</strong> Trabalhamos apenas
-                com fornecedores verificados. Cada par passa por um rigoroso
-                processo de autenticação.
-              </span>
-            </li>
-
-            <li>
-              <span
-                ><strong>Pedido Sob Demanda:</strong> Não encontrou o que
-                procurava? Nosso time vai atrás do modelo específico que você
-                deseja.
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-5">
-          <video
-            src="content/home/snk.mp4"
-            autoplay
-            loop
-            controls
-            class="rounded"
-            style="max-width: 250px; margin: 0 auto; display: block">
-          </video>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="home.html"
+              >Home</a
+            >
+            <a class="nav-link" href="./pages/catalog.html">Catálogo</a>
+            <a class="nav-link" href="./pages/request.html">Solicitar</a>
+            <a class="nav-link" href="./pages/about.html">Sobre</a>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <main>
+      <section class="mt-5 text-center px-3">
+        <h1 class="fw-bold">Nizz Sneakers</h1>
+        <p class="desc">O Hype lá de fora, no seu pé.</p>
+      </section>
+
+      <section class="container mt-5">
+        <div class="row align-items-center justify-content-center g-5">
+          <div class="col-lg-7">
+            <h2 class="fw-light mb-3">A sua ponte para a cena global.</h2>
+            <p class="info-box textbg mb-3">
+              A Nizz Sneakers nasceu da nossa própria paixão e frustração: a
+              dificuldade de acessar o mercado global de sneakers aqui do Brasil.
+              Somos mais que uma empresa de redirecionamento; somos uma curadoria
+              que conecta você à cena global.
+            </p>
+            <p class="info-box textbg">
+              Nossa missão é simples: trazer o par que você deseja, com
+              transparência e autenticidade garantida, direto para a sua porta.
+            </p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <a href="./pages/request.html" class="btn btn-primary btn-lg"
+                >Fazer um Pedido</a
+              >
+              <a href="./pages/about.html" class="btn btn-outline-dark btn-lg"
+                >Saiba Mais</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center">
+            <video
+              src="content/home/snk.mp4"
+              autoplay
+              loop
+              muted
+              controls
+              class="rounded video-home shadow-lg"
+            >
+              Seu navegador não suporta o vídeo.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 mt-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Como Funciona?</h2>
+          <div class="row g-4 text-center">
+            <div class="col-md-6 col-lg-3">
+              <i class="bi bi-search-heart-fill display-4 text-brand"></i>
+              <h5 class="mt-3">Pedido Sob Demanda</h5>
+              <p class="small text-muted">
+                Não encontrou o que procurava? Nosso time vai atrás do modelo
+                específico que você deseja.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <i class="bi bi-patch-check-fill display-4 text-brand"></i>
+              <h5 class="mt-3">Autenticidade Garantida</h5>
+              <p class="small text-muted">
+                Trabalhamos apenas com fornecedores verificados e cada par passa
+                por um rigoroso processo de autenticação.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <i class="bi bi-camera-reels-fill display-4 text-brand"></i>
+              <h5 class="mt-3">Veja Antes de Enviar</h5>
+              <p class="small text-muted">
+                Enviamos fotos e vídeos reais do seu par para sua aprovação
+                final. Transparência total.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <i class="bi bi-box-seam-fill display-4 text-brand"></i>
+              <h5 class="mt-3">Entrega em Todo o Brasil</h5>
+              <p class="small text-muted">
+                Receba seu sneaker exclusivo em qualquer lugar do país com
+                segurança e rastreamento completo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Destaques do Catálogo</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 shadow-sm card-hover">
+                <img
+                  src="content/catalog/aj3-1.jpg"
+                  class="card-img-top"
+                  alt="Air Jordan 3 White Cement"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan 3 "White Cement"</h5>
+                  <p class="card-text">
+                    O retorno de um clássico absoluto. O "White Cement
+                    Reimagined" celebra o design icônico de 1988.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3">
+                  <a href="./pages/catalog.html" class="btn btn-outline-dark"
+                    >Ver no Catálogo</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 shadow-sm card-hover">
+                <img
+                  src="content/catalog/ajp-1.jpg"
+                  class="card-img-top"
+                  alt="Air Jordan 1 Lost & Found"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan 1 High "Lost & Found"</h5>
+                  <p class="card-text">
+                    Uma recriação fiel do tênis que começou tudo, com detalhes
+                    "vintage" que contam uma história.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3">
+                  <a href="./pages/catalog.html" class="btn btn-outline-dark"
+                    >Ver no Catálogo</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 shadow-sm card-hover">
+                <img
+                  src="content/catalog/ajt-1.jpg"
+                  class="card-img-top"
+                  alt="Air Jordan 1 Reverse Mocha"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Air Jordan 1 Low "Reverse Mocha"</h5>
+                  <p class="card-text">
+                    A colaboração icônica com Travis Scott. O swoosh reverso e
+                    os tons neutros definem este par.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3">
+                  <a href="./pages/catalog.html" class="btn btn-outline-dark"
+                    >Ver no Catálogo</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5 mt-4 bg-light text-muted border-top">
+      <div class="container text-center">
+        <nav class="footer-socials mb-3">
+          <a href="#" class="text-muted me-3"
+            ><i class="bi bi-instagram fs-4"></i
+          ></a>
+          <a href="#" class="text-muted me-3"
+            ><i class="bi bi-whatsapp fs-4"></i
+          ></a>
+          <a href="#" class="text-muted"><i class="bi bi-tiktok fs-4"></i></a>
+        </nav>
+
+        <p>&copy; 2025 Nizz Sneakers. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
