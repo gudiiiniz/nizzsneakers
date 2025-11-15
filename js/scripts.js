@@ -59,7 +59,7 @@ function showInfo(data){
 document.getElementById("requestForm").addEventListener("submit", validateForm)
 
 function loadTable() {
-    fetch("content/table.json")
+    fetch("../content/table.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Erro ao carregar JSON");
