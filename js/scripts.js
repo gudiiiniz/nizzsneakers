@@ -57,3 +57,29 @@ function showInfo(data){
 }
 
 document.getElementById("requestForm").addEventListener("submit", validateForm)
+
+function loadTable() {
+    fetch("content/table.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro ao carregar JSON");
+            }
+            return response.json();
+        })
+        .then(data => {
+            const tbody = document.getElementById("size-table");
+            tbody.innerHTML = "";
+
+            data.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item.br}</td>
+                    <td>${item.eur}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        })
+        .catch(error => console.error("Erro:", error));
+}
+
+document.addEventListener("DOMContentLoaded", loadTable);
